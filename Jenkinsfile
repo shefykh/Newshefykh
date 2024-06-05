@@ -1,15 +1,15 @@
 pipeline {
     agent any
     environment {
-        AWS_ACCOUNT_ID="775012328020"
+        AWS_ACCOUNT_ID="339712885650"
         AWS_DEFAULT_REGION="us-east-1"     
     }
         
     stages {
-        stage('Infrastructure Deployment') {
+        stage('KHADIJAT Infrastructure Deployment') {
            environment {
-             AWS_ACCESS_KEY_ID = credentials('aws_access_key_id')
-             AWS_SECRET_ACCESS_KEY = credentials('aws_secret_access_key')
+             AWS_ACCESS_KEY_ID = credentials('Access key')
+             AWS_SECRET_ACCESS_KEY = credentials('Secret_Key')
            }
            steps {
               script {
